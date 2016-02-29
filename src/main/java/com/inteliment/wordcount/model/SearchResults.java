@@ -1,17 +1,19 @@
  package main.java.com.inteliment.wordcount.model;
+ import java.util.Map;
 /**
  * 
  * @author Jaya
- *  SearchResults class containing an array of Strings containing the words and their counts
+ * Class encapsulating the search results
+ * SearchResults class containing an array of Strings containing the words and their counts
  */
 public class SearchResults {
 
-	String counts[];
+	Map<String,Integer>[] counts;
  
-	public String[] getCounts() {
+	public Map<String,Integer>[] getCounts() {
 		return counts;
 	}
-	public void setCounts(String[] counts) {
+	public void setCounts(Map<String,Integer>[] counts) {
 		this.counts = counts;
 	}
  

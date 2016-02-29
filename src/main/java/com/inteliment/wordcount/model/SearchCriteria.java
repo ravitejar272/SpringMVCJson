@@ -1,7 +1,7 @@
 package main.java.com.inteliment.wordcount.model;
 
- import java.util.List;
- 
+import java.util.List;
+//class encapsulating the Search Criteria 
 public class SearchCriteria   {
  
   	private List<String> searchText;	 
