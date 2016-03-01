@@ -4,7 +4,7 @@
  * 
  * @author Jaya
  * Class encapsulating the search results
- * SearchResults class containing an array of Strings containing the words and their counts
+ * SearchResults class containing a Map of the words and their counts
  */
 public class SearchResults {
 

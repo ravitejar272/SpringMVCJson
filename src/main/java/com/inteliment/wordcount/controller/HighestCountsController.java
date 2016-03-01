@@ -20,11 +20,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RestController
 
 @RequestMapping( "/counter-api/top")
-
+/**
+ * 
+ * @author Jaya
+ * Controller class for /top curl command to obtain the topmost frequency words
+ */
 public class HighestCountsController{
 	@Autowired  
 	WordCountService wordCountService;  
-	@RequestMapping(value = "{howMany}", method = RequestMethod.GET, produces = "text/csv" )
+	@RequestMapping(value = "{howMany}", method = RequestMethod.GET, produces = "text/csv"  )
 	public @ResponseBody String getTop(@PathVariable String howMany) {
 
 		int count = 0;
